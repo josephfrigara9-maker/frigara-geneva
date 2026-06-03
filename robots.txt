@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cgv.html
+Disallow: /terms.html
+Disallow: /mentions-legales.html
+Disallow: /legal-notice.html
+
+Sitemap: https://frigarageneva.ch/sitemap.xml

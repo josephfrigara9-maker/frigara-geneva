@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer=window.dataLayer||[];
+(function(){
+  var done=false;
+  function loadGTM(){
+    if(done)return;done=true;
+    var j=document.createElement('script');j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id=GTM-5S7MMGST';
+    document.head.appendChild(j);
+  }
+  window.addEventListener('load',function(){
+    'requestIdleCallback'in window?requestIdleCallback(loadGTM,{timeout:3000}):setTimeout(loadGTM,3000);
+  });
+  ['click','scroll','keydown','touchstart'].forEach(function(e){
+    document.addEventListener(e,loadGTM,{once:true,passive:true});
+  });
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page introuvable (404) – Frigara Geneva</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://frigarageneva.ch/">
+<meta name="theme-color" content="#0F2044">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/plus-jakarta-sans-latin.woff2">
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/plus-jakarta-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root {
+  --navy:#0F2044; --navy-mid:#1B2E4B;
+  --blue:#2B6CB0; --blue-bright:#3B82F6;
+  --red:#C0392B; --red-dark:#96281B;
+  --gold-light:#F0C040;
+  --off:#F7F8FA; --border:#E2E8F0;
+  --txt:#1A202C; --txt-muted:#64748B;
+  --font-body:"Inter","Helvetica Neue",Arial,sans-serif;
+  --font-heading:"Plus Jakarta Sans","Helvetica Neue",Arial,sans-serif;
+  --r-sm:6px; --r:12px; --r-full:999px;
+  --sh-sm:0 1px 4px rgba(0,0,0,.08);
+  --sh:0 4px 16px rgba(0,0,0,.10);
+  --t:.35s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+@keyframes page-in{from{opacity:0}to{opacity:1}}
+body{font-family:var(--font-body);color:var(--txt);background:#fff;line-height:1.65;overflow-x:hidden;animation:page-in .65s ease 1 forwards;min-height:100vh;display:flex;flex-direction:column}
+@media(prefers-reduced-motion:reduce){body{animation:none}}
+h1,h2,h3{font-family:var(--font-heading)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+/* SKIP */
+.skip{position:absolute;top:-50px;left:1rem;background:var(--blue-bright);color:#fff;padding:.5rem 1rem;border-radius:var(--r);font-size:.875rem;transition:top var(--t);z-index:9999}
+.skip:focus{top:1rem}
+
+/* UTILITIES */
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+
+/* ═══ HEADER ═══════════════════════════════════════════════ */
+.hdr{position:sticky;top:0;z-index:200;background:#001947;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 2px 12px rgba(0,0,0,.2)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1.5rem}
+.hdr-brand{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.hdr-brand img{height:48px;width:auto}
+.hdr-nav ul{display:flex;gap:2rem;align-items:center}
+.hdr-nav a{font-family:var(--font-heading);font-size:.85rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.8);padding-bottom:3px;border-bottom:2px solid transparent;transition:color var(--t),border-color var(--t)}
+.hdr-nav a:hover{color:#fff;border-bottom-color:#fff}
+.hdr-cta{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+@media(max-width:900px){.hdr-nav{display:none}}
+
+/* HAMBURGER */
+.mob-menu-btn{display:none;flex-direction:column;justify-content:center;gap:6px;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:10px;position:relative;z-index:1001}
+.mob-menu-btn span{display:block;height:1.5px;background:#fff;border-radius:2px;transition:transform .38s cubic-bezier(.4,0,.2,1),opacity .25s ease,width .28s ease;transform-origin:center}
+.mob-menu-btn span:nth-child(1){width:24px}
+.mob-menu-btn span:nth-child(2){width:16px;margin-left:auto}
+.mob-menu-btn span:nth-child(3){width:24px}
+.mob-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg);width:24px}
+.mob-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;width:0}
+.mob-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);width:24px}
+@media(max-width:900px){.mob-menu-btn{display:flex}}
+.mob-nav{position:fixed;inset:0;z-index:1000;background:var(--navy);display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .38s ease,visibility .38s ease}
+.mob-nav.is-open{opacity:1;visibility:visible;pointer-events:auto}
+.mob-nav ul{display:flex;flex-direction:column;align-items:center;gap:0}
+.mob-nav li{opacity:0;transform:translateY(16px);transition:opacity .4s ease,transform .4s ease}
+.mob-nav.is-open li:nth-child(1){opacity:1;transform:none;transition-delay:.08s}
+.mob-nav.is-open li:nth-child(2){opacity:1;transform:none;transition-delay:.14s}
+.mob-nav.is-open li:nth-child(3){opacity:1;transform:none;transition-delay:.20s}
+.mob-nav.is-open li:nth-child(4){opacity:1;transform:none;transition-delay:.26s}
+.mob-nav.is-open li:nth-child(5){opacity:1;transform:none;transition-delay:.32s}
+.mob-nav a{display:block;padding:.9rem 2.5rem;font-family:var(--font-heading);font-size:1.2rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);text-align:center;position:relative;overflow:hidden;transition:color .25s ease}
+.mob-nav a::after{content:'';position:absolute;bottom:6px;left:50%;transform:translateX(-50%);width:0;height:1px;background:rgba(255,255,255,.35);transition:width .3s ease}
+.mob-nav a:hover{color:#fff}
+.mob-nav a:hover::after{width:48px}
+.mob-nav-footer{position:absolute;bottom:2.5rem;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:.75rem;opacity:0;transform:translateY(10px);transition:opacity .4s ease .4s,transform .4s ease .4s}
+.mob-nav.is-open .mob-nav-footer{opacity:1;transform:none}
+.mob-nav-footer a.mob-nav-phone{font-family:var(--font-heading);font-size:1rem;font-weight:800;letter-spacing:.04em;color:#fff;display:flex;align-items:center;gap:.5rem}
+.mob-nav-footer a.mob-nav-phone svg{color:var(--red)}
+.mob-nav-footer .mob-nav-urgence{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);border:1px solid rgba(255,255,255,.12);padding:.3rem .9rem;border-radius:50px}
+
+/* ═══ 404 HERO ══════════════════════════════════════════════ */
+.err-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:5rem 1.5rem}
+.err-inner{text-align:center;max-width:560px}
+.err-code{
+  font-family:var(--font-heading);font-size:clamp(6rem,18vw,10rem);font-weight:900;
+  line-height:1;letter-spacing:-.05em;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:.5rem;
+}
+.err-title{
+  font-family:var(--font-heading);font-size:clamp(1.4rem,4vw,2rem);font-weight:800;
+  color:var(--navy);margin-bottom:1rem;letter-spacing:-.02em;
+}
+.err-sub{font-size:1rem;color:var(--txt-muted);margin-bottom:2.5rem;line-height:1.7}
+.err-actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:3rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem 1.75rem;border-radius:var(--r-sm);font-family:var(--font-heading);font-size:.9rem;font-weight:700;cursor:pointer;border:none;letter-spacing:.02em;transition:background var(--t),transform var(--t),box-shadow var(--t),color var(--t);white-space:nowrap;text-decoration:none}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 2px 8px rgba(192,57,43,.35)}
+.btn-red:hover{background:var(--red-dark);box-shadow:0 4px 16px rgba(192,57,43,.45)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.err-divider{width:40px;height:2px;background:var(--border);margin:0 auto 1.5rem}
+.err-hint{font-size:.82rem;color:var(--txt-muted)}
+.err-hint a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.err-hint a:hover{color:var(--navy)}
+
+/* ═══ FOOTER ════════════════════════════════════════════════ */
+.ftr{background:#001947;color:rgba(255,255,255,.55);padding:3rem 0 0}
+.ftr-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding:1.25rem 0;font-size:.78rem;color:rgba(255,255,255,.3)}
+.ftr-bot nav{display:flex;gap:1.5rem}
+.ftr-bot a{color:rgba(255,255,255,.3);transition:color var(--t)}
+.ftr-bot a:hover{color:rgba(255,255,255,.7)}
+@media(max-width:768px){
+  .ftr-bot{flex-direction:column;text-align:center;gap:.75rem}
+  .wrap{padding:0 1rem}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S7MMGST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ═══ HEADER ══════════════════════════════════════════════ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="hdr-brand" href="index.html" aria-label="Frigara Geneva – Accueil">
+      <img src="logo.png" alt="" width="64" aria-hidden="true">
+    </a>
+    <nav class="hdr-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#entretien">Entretien annuel</a></li>
+        <li><a href="index.html#garanties">Garanties</a></li>
+        <li><a href="index.html#avis">Avis</a></li>
+        <li><a href="index.html#rdv">Rendez-vous</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-cta">
+      <a href="index-en.html" style="font-size:.75rem;font-weight:700;color:rgba(255,255,255,.7);text-decoration:none;letter-spacing:.06em;padding:.3rem .7rem;border:1px solid rgba(255,255,255,.2);border-radius:50px;transition:color .2s,border-color .2s" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,.6)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.borderColor='rgba(255,255,255,.2)'">EN</a>
+      <button class="mob-menu-btn" id="mob-menu-btn" aria-expanded="false" aria-controls="mob-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mob-nav" id="mob-nav" aria-label="Menu mobile">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#entretien">Entretien annuel</a></li>
+      <li><a href="index.html#garanties">Garanties</a></li>
+      <li><a href="index.html#avis">Avis clients</a></li>
+      <li><a href="index.html#rdv">Rendez-vous</a></li>
+    </ul>
+    <div class="mob-nav-footer">
+      <a href="tel:+41797788267" class="mob-nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +41 79 778 82 67
+      </a>
+      <span class="mob-nav-urgence">24h / 7j — Intervention rapide</span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="err-wrap">
+    <div class="err-inner">
+      <div class="err-code" aria-hidden="true">404</div>
+      <h1 class="err-title">Page introuvable</h1>
+      <p class="err-sub">Cette page n'existe pas ou a été déplacée.<br>Nous pouvons quand même vous aider — appelez-nous ou retournez à l'accueil.</p>
+      <div class="err-actions">
+        <a href="tel:+41797788267" class="btn btn-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Appeler maintenant
+        </a>
+        <a href="index.html" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Retour à l'accueil
+        </a>
+      </div>
+      <div class="err-divider"></div>
+      <p class="err-hint">Vous cherchez un service ? <a href="index.html#services">Voir tous nos services</a> · <a href="index.html#rdv">Prendre rendez-vous</a></p>
+    </div>
+  </div>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-bot">
+      <p>&copy; 2026 Frigara Geneva — Tous droits réservés</p>
+      <nav>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="legal-notice.html">Legal Notice (EN)</a>
+        <a href="terms.html">Terms (EN)</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var mobBtn = document.getElementById('mob-menu-btn');
+  var mobNav = document.getElementById('mob-nav');
+  if (mobBtn && mobNav) {
+    mobBtn.addEventListener('click', function() {
+      var open = mobNav.classList.toggle('is-open');
+      mobBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    mobNav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mobNav.classList.remove('is-open');
+        mobBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+</script>
+</body>
+</html>
