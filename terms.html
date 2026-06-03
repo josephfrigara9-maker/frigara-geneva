@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer=window.dataLayer||[];
+(function(){
+  var done=false;
+  function loadGTM(){
+    if(done)return;done=true;
+    var j=document.createElement('script');j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id=GTM-5S7MMGST';
+    document.head.appendChild(j);
+  }
+  window.addEventListener('load',function(){
+    'requestIdleCallback'in window?requestIdleCallback(loadGTM,{timeout:3000}):setTimeout(loadGTM,3000);
+  });
+  ['click','scroll','keydown','touchstart'].forEach(function(e){
+    document.addEventListener(e,loadGTM,{once:true,passive:true});
+  });
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and Conditions – Frigara Geneva</title>
+<meta name="description" content="General terms and conditions of Frigara Geneva, plumber and heating engineer in Geneva. Pricing, warranties, liability and applicable law.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://frigarageneva.ch/terms.html">
+<meta name="theme-color" content="#0F2044">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/plus-jakarta-sans-latin.woff2">
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/plus-jakarta-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* ── DESIGN SYSTEM ────────────────────────────────────────── */
+:root {
+  --navy:       #0F2044;
+  --navy-mid:   #1B2E4B;
+  --blue:       #2B6CB0;
+  --blue-bright:#3B82F6;
+  --red:        #C0392B;
+  --white:      #FFFFFF;
+  --off:        #F7F8FA;
+  --border:     #E2E8F0;
+  --txt:        #1A202C;
+  --txt-muted:  #64748B;
+  --font-body:    "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+  --r-sm: 6px; --r: 12px; --r-lg: 20px; --r-full: 999px;
+  --sh-sm: 0 1px 4px rgba(0,0,0,.08);
+  --sh:    0 4px 16px rgba(0,0,0,.10);
+  --t: .35s ease;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
+html { font-size:16px; scroll-behavior:smooth }
+@keyframes page-in { from { opacity:0 } to { opacity:1 } }
+body {
+  font-family:var(--font-body);
+  color:var(--txt);
+  background:#fff;
+  line-height:1.7;
+  animation:page-in .5s ease both;
+}
+.skip { position:absolute; top:-40px; left:0; background:var(--navy); color:#fff; padding:.5rem 1rem; z-index:9999; transition:top .2s }
+.skip:focus { top:0 }
+.wrap { max-width:1160px; margin:0 auto; padding:0 1.5rem }
+.wrap-sm { max-width:780px; margin:0 auto; padding:0 1.5rem }
+img { max-width:100%; height:auto; display:block }
+a { color:var(--blue); text-decoration:none }
+a:hover { text-decoration:underline }
+
+/* ── HEADER ── */
+.hdr {
+  background:var(--navy);
+  position:sticky; top:0; z-index:100;
+  box-shadow:0 2px 12px rgba(0,0,0,.2);
+}
+.hdr-in { display:flex; align-items:center; justify-content:space-between; gap:1rem; height:68px }
+.hdr-brand { display:flex; align-items:center; gap:.75rem; text-decoration:none }
+.hdr-brand img { width:44px; height:auto }
+.hdr-brand-name { display:flex; flex-direction:column; line-height:1.2 }
+.hdr-brand-name strong { font-family:var(--font-heading); font-size:.95rem; font-weight:800; color:#fff }
+.hdr-brand-name span { font-size:.7rem; color:rgba(255,255,255,.55); font-weight:500 }
+.hdr-nav { display:flex }
+.hdr-nav ul { display:flex; gap:1.5rem; list-style:none }
+.hdr-nav a { font-size:.85rem; font-weight:600; color:rgba(255,255,255,.8); text-decoration:none; transition:color var(--t) }
+.hdr-nav a:hover { color:#fff }
+.hdr-cta { display:flex; align-items:center; gap:.75rem }
+.mob-menu-btn { display:none; flex-direction:column; justify-content:center; gap:5px; width:40px; height:40px; background:rgba(255,255,255,.08); border:none; border-radius:var(--r-sm); cursor:pointer; padding:0 10px }
+.mob-menu-btn span { display:block; height:2px; background:#fff; border-radius:2px; transition:transform .3s, opacity .3s }
+.mob-nav { display:none; background:var(--navy-mid); padding:1rem 0 }
+.mob-nav ul { list-style:none; padding:0 1.5rem; display:flex; flex-direction:column; gap:.25rem }
+.mob-nav a { display:block; padding:.65rem 0; font-size:.95rem; font-weight:600; color:rgba(255,255,255,.85); text-decoration:none; border-bottom:1px solid rgba(255,255,255,.07); transition:color var(--t) }
+.mob-nav a:hover { color:#fff }
+.mob-nav-footer { padding:1.25rem 1.5rem 0; display:flex; flex-direction:column; gap:.5rem }
+.mob-nav-phone { display:flex; align-items:center; gap:.5rem; font-size:1.05rem; font-weight:700; color:#fff; text-decoration:none }
+.mob-nav-urgence { font-size:.78rem; color:rgba(255,255,255,.5) }
+.mob-nav.is-open { display:block }
+@media(max-width:900px) {
+  .hdr-nav { display:none }
+  .mob-menu-btn { display:flex }
+}
+
+/* ── LEGAL HERO ── */
+.legal-hero {
+  background:linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  padding:3.5rem 0 3rem;
+  text-align:center;
+  color:#fff;
+}
+.legal-hero-eyebrow { font-size:.78rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.5); margin-bottom:.75rem }
+.legal-hero h1 { font-family:var(--font-heading); font-size:clamp(1.75rem,4vw,2.5rem); font-weight:800; color:#fff; margin-bottom:.75rem }
+.legal-hero-sub { font-size:.875rem; color:rgba(255,255,255,.5) }
+.legal-hero-lang { margin-top:1.25rem }
+.legal-hero-lang a { display:inline-flex; align-items:center; gap:.4rem; font-size:.8rem; font-weight:600; color:rgba(255,255,255,.6); border:1px solid rgba(255,255,255,.2); border-radius:var(--r-full); padding:.35rem .85rem; text-decoration:none; transition:color var(--t), border-color var(--t) }
+.legal-hero-lang a:hover { color:#fff; border-color:rgba(255,255,255,.6) }
+
+/* ── LEGAL CONTENT ── */
+.legal-sec { padding:3rem 0 5rem }
+.legal-body { display:flex; flex-direction:column; gap:2.5rem }
+.legal-article h2 { font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--navy); margin-bottom:1rem; display:flex; align-items:center; gap:.6rem }
+.art-num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; background:var(--navy); color:#fff; border-radius:50%; font-size:.78rem; font-weight:700; flex-shrink:0 }
+.legal-article h3 { font-family:var(--font-heading); font-size:.95rem; font-weight:700; color:var(--navy-mid); margin:1.25rem 0 .5rem }
+.legal-article p { margin-bottom:.75rem; color:var(--txt) }
+.legal-article p:last-child { margin-bottom:0 }
+.legal-article ul { padding-left:1.25rem; margin-bottom:.75rem; display:flex; flex-direction:column; gap:.4rem; list-style:disc }
+.legal-article ul li { color:var(--txt) }
+.legal-info-box { background:var(--off); border:1px solid var(--border); border-radius:var(--r); padding:1rem 1.25rem; margin-bottom:1rem; font-size:.9rem; line-height:1.8 }
+.legal-info-box strong { display:block; font-family:var(--font-heading); font-weight:700; color:var(--navy); margin-bottom:.25rem }
+
+/* ── FOOTER ── */
+.ftr { background:var(--navy); color:rgba(255,255,255,.65); padding:3.5rem 0 0 }
+.ftr-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:3rem; padding-bottom:3rem; border-bottom:1px solid rgba(255,255,255,.08) }
+@media(max-width:768px) { .ftr-grid { grid-template-columns:1fr } }
+.ftr-brand { display:flex; align-items:center; gap:.75rem; margin-bottom:1.25rem }
+.ftr-brand img { width:44px; height:auto }
+.ftr-brand-name { display:flex; flex-direction:column; line-height:1.25 }
+.ftr-brand-name strong { font-family:var(--font-heading); font-size:.95rem; font-weight:800; color:#fff }
+.ftr-brand-name span { font-size:.75rem; color:rgba(255,255,255,.45) }
+.ftr address { font-style:normal; font-size:.875rem; line-height:1.9 }
+.ftr address a { color:rgba(255,255,255,.75); transition:color var(--t) }
+.ftr address a:hover { color:#fff }
+.ftr-num { font-size:.7rem; color:rgba(255,255,255,.3); margin-top:.75rem }
+.ftr h3 { font-family:var(--font-heading); font-size:.7rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.4); margin-bottom:1rem }
+.ftr ul { display:flex; flex-direction:column; gap:.5rem; list-style:none }
+.ftr ul a { font-size:.875rem; color:rgba(255,255,255,.6); transition:color var(--t); text-decoration:none }
+.ftr ul a:hover { color:#fff }
+.ftr ul li strong { color:rgba(255,255,255,.8) }
+.ftr-bot { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; padding:1.25rem 0; font-size:.78rem; color:rgba(255,255,255,.3) }
+.ftr-bot nav { display:flex; gap:1.5rem; flex-wrap:wrap }
+.ftr-bot a { color:rgba(255,255,255,.3); transition:color var(--t); text-decoration:none }
+.ftr-bot a:hover { color:rgba(255,255,255,.7) }
+@media(max-width:768px) {
+  .ftr-bot { flex-direction:column; text-align:center; gap:.75rem }
+  .wrap { padding:0 1rem }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S7MMGST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ═══ HEADER ══════════════════════════════════════════════ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="hdr-brand" href="index-en.html" aria-label="Frigara Geneva – Home">
+      <picture><source srcset="logo.webp" type="image/webp"><img src="logo.png" alt="" width="44" height="19" aria-hidden="true"></picture>
+      <div class="hdr-brand-name">
+        <strong>Frigara Geneva</strong>
+        <span>Plumbing · Heating</span>
+      </div>
+    </a>
+    <nav class="hdr-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index-en.html#services">Services</a></li>
+        <li><a href="index-en.html#entretien">Annual Service</a></li>
+        <li><a href="index-en.html#garanties">Guarantees</a></li>
+        <li><a href="index-en.html#avis">Reviews</a></li>
+        <li><a href="index-en.html#rdv">Book</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-cta">
+      <a href="cgv.html" style="font-size:.75rem;font-weight:700;color:rgba(255,255,255,.7);text-decoration:none;letter-spacing:.06em;padding:.3rem .7rem;border:1px solid rgba(255,255,255,.2);border-radius:50px;transition:color .2s,border-color .2s" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,.6)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.borderColor='rgba(255,255,255,.2)'">FR</a>
+      <button class="mob-menu-btn" id="mob-menu-btn" aria-expanded="false" aria-controls="mob-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mob-nav" id="mob-nav" aria-label="Mobile menu">
+    <ul>
+      <li><a href="index-en.html#services">Services</a></li>
+      <li><a href="index-en.html#entretien">Annual Service</a></li>
+      <li><a href="index-en.html#garanties">Guarantees</a></li>
+      <li><a href="index-en.html#avis">Reviews</a></li>
+      <li><a href="index-en.html#rdv">Book</a></li>
+    </ul>
+    <div class="mob-nav-footer">
+      <a href="tel:+41797788267" class="mob-nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +41 79 778 82 67
+      </a>
+      <span class="mob-nav-urgence">24/7 — Fast response</span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ═══ PAGE HERO ════════════════════════════════════════════ -->
+<div class="legal-hero">
+  <div class="wrap">
+    <p class="legal-hero-eyebrow">Frigara Geneva</p>
+    <h1>Terms and Conditions</h1>
+    <p class="legal-hero-sub">Effective 1 June 2026</p>
+    <div class="legal-hero-lang">
+      <a href="cgv.html">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Lire en français
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CONTENT ═══════════════════════════════════════════════ -->
+<section class="legal-sec">
+  <div class="wrap-sm">
+    <div class="legal-body">
+
+      <!-- 1. SCOPE -->
+      <div class="legal-article">
+        <h2><span class="art-num">1</span> Scope and Application</h2>
+        <p>These General Terms and Conditions ("Terms") apply to all services provided by:</p>
+        <div class="legal-info-box">
+          <strong>Frigara Geneva</strong>
+          Rue Du-Roveray 16, 1207 Geneva, Switzerland<br>
+          Tel.: <a href="tel:+41797788267">+41 79 778 82 67</a><br>
+          Email: <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a><br>
+          Company no.: CHE-393.541.360
+        </div>
+        <p>These Terms govern all contractual relationships between Frigara Geneva (the "Service Provider") and any individual or legal entity engaging its services (the "Client"). They take precedence over any other document unless otherwise agreed in writing.</p>
+      </div>
+
+      <!-- 2. SERVICES -->
+      <div class="legal-article">
+        <h2><span class="art-num">2</span> Services Description</h2>
+        <p>Frigara Geneva provides the following services:</p>
+        <ul>
+          <li>Emergency plumbing (24/7)</li>
+          <li>Water leak detection and repair</li>
+          <li>Drain unblocking and maintenance</li>
+          <li>Water heater and heat pump installation, replacement and repair</li>
+          <li>Heating system and boiler installation and maintenance (gas, oil, heat pump)</li>
+          <li>Air conditioning and ventilation (installation and servicing)</li>
+          <li>Annual maintenance contracts</li>
+        </ul>
+        <p>Services are provided exclusively within the Canton of Geneva and its immediate surroundings, unless otherwise agreed in writing in advance.</p>
+      </div>
+
+      <!-- 3. QUOTES -->
+      <div class="legal-article">
+        <h2><span class="art-num">3</span> Quotes and Acceptance</h2>
+        <p>All quotes provided by Frigara Geneva are free of charge and valid for <strong>30 days</strong> from the date of issue, unless otherwise specified.</p>
+        <p>Quotes are prepared based on information provided by the Client and a diagnostic visit where necessary. They specify the nature of the work, materials to be used and the total price including VAT.</p>
+        <p>Acceptance of the quote by the Client (signature, written confirmation or email) constitutes conclusion of the contract and a binding commitment by both parties. Any modification after acceptance requires a written amendment.</p>
+        <p>For emergency call-outs, the Client's verbal agreement (or that of their representative) is sufficient to initiate the work. A quote will be provided on request before or after the intervention depending on the nature of the emergency.</p>
+      </div>
+
+      <!-- 4. PRICING -->
+      <div class="legal-article">
+        <h2><span class="art-num">4</span> Pricing</h2>
+        <p>All prices are stated in <strong>Swiss francs (CHF)</strong>, inclusive of applicable VAT. Frigara Geneva is registered for Swiss VAT at the current applicable rate.</p>
+
+        <h3>Standard Interventions</h3>
+        <p>Hourly rates are communicated to the Client at first contact or in the quote. Travel costs may apply depending on the location of the intervention.</p>
+
+        <h3>Emergency Call-outs</h3>
+        <p>Interventions outside standard business hours (Monday–Friday 08:00–19:00), Saturday afternoons, Sundays, and public holidays are charged at a premium rate, which will be communicated to the Client in advance.</p>
+
+        <h3>Materials and Supplies</h3>
+        <p>Parts, equipment and materials required to carry out the work are charged separately at market price at the time of intervention, unless expressly included in the accepted quote.</p>
+
+        <h3>Price Revisions</h3>
+        <p>Frigara Geneva reserves the right to revise its rates at any time. Changes do not apply to quotes already accepted.</p>
+      </div>
+
+      <!-- 5. PAYMENT -->
+      <div class="legal-article">
+        <h2><span class="art-num">5</span> Payment Terms</h2>
+        <p>Payment is due upon receipt of the invoice, unless otherwise agreed in writing. Accepted payment methods include:</p>
+        <ul>
+          <li>Bank transfer (IBAN provided on invoice)</li>
+          <li>Twint</li>
+          <li>Cash (within legal limits)</li>
+          <li>Credit/debit card (on request)</li>
+        </ul>
+        <p>Any overdue payment beyond <strong>30 days</strong> from the invoice date will automatically incur default interest at a rate of 5% per annum, pursuant to Art. 104 of the Swiss Code of Obligations, without the need for prior formal notice.</p>
+        <p>In the event of persistent non-payment, Frigara Geneva reserves the right to suspend any ongoing services and to pursue recovery of the outstanding amount through legal proceedings, with all collection costs borne by the defaulting Client.</p>
+      </div>
+
+      <!-- 6. RESPONSE TIMES -->
+      <div class="legal-article">
+        <h2><span class="art-num">6</span> Response Times</h2>
+        <p>Frigara Geneva aims to respond within the following timeframes, subject to availability:</p>
+        <ul>
+          <li><strong>Emergencies:</strong> on-site within 30 minutes in the Canton of Geneva (indicative, non-contractual)</li>
+          <li><strong>Scheduled interventions:</strong> as agreed in the quote or at the time of booking</li>
+          <li><strong>Maintenance contracts:</strong> as defined in the specific contract</li>
+        </ul>
+        <p>Delays may occur due to circumstances beyond the Service Provider's control (weather, traffic, force majeure). In such cases, Frigara Geneva will notify the Client as soon as possible.</p>
+      </div>
+
+      <!-- 7. CLIENT OBLIGATIONS -->
+      <div class="legal-article">
+        <h2><span class="art-num">7</span> Client Obligations</h2>
+        <p>The Client undertakes to:</p>
+        <ul>
+          <li>Provide accurate and complete information about the nature of the fault or requirement</li>
+          <li>Ensure free and safe access to the premises and installations at the time of the intervention</li>
+          <li>Inform the Service Provider of any special conditions (presence of asbestos, specific installations, restricted access)</li>
+          <li>Settle invoices within the agreed timeframes</li>
+          <li>Verify that the work carried out meets their expectations before signing the job completion form</li>
+        </ul>
+      </div>
+
+      <!-- 8. WARRANTIES -->
+      <div class="legal-article">
+        <h2><span class="art-num">8</span> Warranties</h2>
+        <p>Work carried out by Frigara Geneva is covered by the following warranties:</p>
+
+        <h3>Legal Warranty on Workmanship</h3>
+        <p>In accordance with the Swiss Code of Obligations (Art. 363 et seq. CO), construction and installation work is covered by a <strong>5-year warranty</strong> for apparent defects reported within 2 years of completion, and 5 years for hidden defects.</p>
+
+        <h3>Manufacturer Warranty on Parts</h3>
+        <p>Equipment and parts supplied benefit from the manufacturer's warranty, the terms of which are provided to the Client upon installation.</p>
+
+        <h3>Exclusions</h3>
+        <p>Warranties do not cover:</p>
+        <ul>
+          <li>Damage resulting from misuse or neglect by the Client</li>
+          <li>Interventions or modifications made by unauthorised third parties after our work</li>
+          <li>Normal wear and tear of equipment</li>
+          <li>Damage caused by external events (frost, flooding, power surges)</li>
+        </ul>
+      </div>
+
+      <!-- 9. LIABILITY -->
+      <div class="legal-article">
+        <h2><span class="art-num">9</span> Liability</h2>
+        <p>Frigara Geneva holds professional liability insurance. In the event of damage caused during an intervention, the Service Provider's liability is limited to the value of the relevant service, except in cases of gross negligence or wilful misconduct.</p>
+        <p>Frigara Geneva shall not be liable for indirect damages, loss of business, or consequential losses arising from a service, except where mandatory legal provisions provide otherwise.</p>
+        <p>The Service Provider cannot be held liable in cases of force majeure as defined under Swiss law (Art. 97 CO).</p>
+      </div>
+
+      <!-- 10. CANCELLATION -->
+      <div class="legal-article">
+        <h2><span class="art-num">10</span> Cancellation and Rescheduling</h2>
+        <p>Any cancellation or rescheduling of a planned appointment must be communicated to Frigara Geneva at least <strong>24 hours in advance</strong> by phone or email.</p>
+        <p>In the event of late cancellation (less than 24 hours' notice) or Client absence at the time of the intervention, a call-out fee may be charged.</p>
+        <p>Frigara Geneva reserves the right to cancel or reschedule an intervention in the event of force majeure or unforeseen unavailability, with prior notification to the Client as soon as possible.</p>
+      </div>
+
+      <!-- 11. SUBCONTRACTING -->
+      <div class="legal-article">
+        <h2><span class="art-num">11</span> Subcontracting</h2>
+        <p>Frigara Geneva may, for certain specialised services, engage qualified and insured subcontractors. The Service Provider remains solely responsible to the Client for the proper execution of the work, regardless of any subcontractor involvement.</p>
+      </div>
+
+      <!-- 12. DATA PROTECTION -->
+      <div class="legal-article">
+        <h2><span class="art-num">12</span> Data Protection</h2>
+        <p>Personal data collected in connection with the contractual relationship (name, contact details, service history) is processed in accordance with the <strong>Swiss Federal Act on Data Protection (FADP/nLPD)</strong>, in force since 1 September 2023.</p>
+        <p>This data is used exclusively for service delivery, invoicing and client relationship management. It is not shared with third parties for commercial purposes.</p>
+        <p>To exercise your rights of access, rectification or erasure, contact us at: <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a>.</p>
+        <p>For further information, see our <a href="legal-notice.html">Legal Notice and Privacy Policy</a>.</p>
+      </div>
+
+      <!-- 13. GOVERNING LAW -->
+      <div class="legal-article">
+        <h2><span class="art-num">13</span> Governing Law and Jurisdiction</h2>
+        <p>These Terms are governed exclusively by <strong>Swiss law</strong>, in particular the Code of Obligations (CO) and the Federal Act on Data Protection (FADP).</p>
+        <p>Any dispute relating to the interpretation or performance of these Terms shall be submitted, failing amicable resolution, to the exclusive jurisdiction of the <strong>ordinary courts of the Canton of Geneva</strong>, subject to appeal to the Swiss Federal Supreme Court.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <div class="ftr-brand">
+          <picture><source srcset="logo.webp" type="image/webp"><img src="logo.png" alt="Frigara Geneva" width="44" height="19"></picture>
+          <div class="ftr-brand-name">
+            <strong>Frigara Geneva</strong>
+            <span>Plumbing · Heating</span>
+          </div>
+        </div>
+        <address>
+          Rue Du-Roveray 16<br>
+          1207 Geneva<br>
+          <a href="tel:+41797788267">+41 79 778 82 67</a><br>
+          <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a>
+        </address>
+        <p class="ftr-num">CHE-393.541.360</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="index-en.html#services">Emergency Plumbing 24/7</a></li>
+          <li><a href="index-en.html#services">Water Leak Repair</a></li>
+          <li><a href="index-en.html#services">Water Heater Installation</a></li>
+          <li><a href="index-en.html#services">Drain Unblocking</a></li>
+          <li><a href="index-en.html#services">Heating &amp; Boiler</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opening Hours</h3>
+        <ul>
+          <li><strong>Emergencies:</strong> 24/7</li>
+          <li>Mon – Fri: 08:00 – 19:00</li>
+          <li>Saturday: 09:00 – 17:00</li>
+          <li>Sunday: Emergencies only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <p>&copy; 2026 Frigara Geneva — All rights reserved</p>
+      <p>Created by <a href="https://romand-web.com" target="_blank" rel="noopener noreferrer">Romand-web.com</a></p>
+      <nav>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV (FR)</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var mobBtn = document.getElementById('mob-menu-btn');
+  var mobNav = document.getElementById('mob-nav');
+  if (mobBtn && mobNav) {
+    mobBtn.addEventListener('click', function() {
+      var open = mobNav.classList.toggle('is-open');
+      mobBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    mobNav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mobNav.classList.remove('is-open');
+        mobBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+</script>
+</body>
+</html>
