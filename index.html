@@ -2277,10 +2277,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* ── Dégradé de fond au scroll ── */
   (function() {
     var ticking = false;
-    var maxScroll = document.body.scrollHeight - window.innerHeight;
-    window.addEventListener('resize', function() {
-      maxScroll = document.body.scrollHeight - window.innerHeight;
-    }, { passive: true });
+    var maxScroll = 0;
+    function calcMax() { maxScroll = document.body.scrollHeight - window.innerHeight; }
+    window.addEventListener('load', calcMax);
+    window.addEventListener('resize', calcMax, { passive: true });
     function updateBg() {
       if (maxScroll <= 0) { ticking = false; return; }
       var progress = Math.min(window.scrollY / maxScroll, 1);
@@ -2308,9 +2308,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   try { if (localStorage.getItem(KEY)) return; } catch(e){}
 
-  setTimeout(function() {
+  var shown = false;
+  function showBanner() {
+    if (shown) return; shown = true;
     banner.style.display = 'flex';
-  }, 3500);
+  }
+  ['scroll','click','touchstart','keydown'].forEach(function(e) {
+    document.addEventListener(e, showBanner, { once: true, passive: true });
+  });
+  setTimeout(showBanner, 10000);
 
   function dismiss(choice) {
     try { localStorage.setItem(KEY, choice); } catch(e){}
