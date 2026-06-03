@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales – Frigara Geneva</title>
+<meta name="description" content="Mentions légales et politique de confidentialité de Frigara Geneva, plombier chauffagiste à Genève.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://frigara-geneva.ch/mentions-legales.html">
+<meta name="theme-color" content="#0F2044">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── DESIGN SYSTEM ────────────────────────────────────────── */
+:root {
+  --navy:       #0F2044;
+  --navy-mid:   #1B2E4B;
+  --blue:       #2B6CB0;
+  --blue-bright:#3B82F6;
+  --red:        #C0392B;
+  --gold-light: #F0C040;
+  --white:      #FFFFFF;
+  --off:        #F7F8FA;
+  --border:     #E2E8F0;
+  --txt:        #1A202C;
+  --txt-muted:  #64748B;
+  --font-body:    "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+  --r-sm: 6px; --r: 12px; --r-lg: 20px; --r-full: 999px;
+  --sh-sm: 0 1px 4px rgba(0,0,0,.08);
+  --sh:    0 4px 16px rgba(0,0,0,.10);
+  --t: .35s ease;
+}
+
+/* ── RESET ────────────────────────────────────────────────── */
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
+html { font-size:16px; scroll-behavior:smooth }
+@keyframes page-in { from { opacity:0 } to { opacity:1 } }
+body { font-family:var(--font-body); color:var(--txt); background:#fff; line-height:1.65; overflow-x:hidden; animation:page-in .65s ease 1 forwards }
+@media(prefers-reduced-motion:reduce) { body { animation:none } }
+h1,h2,h3,h4,h5,h6 { font-family:var(--font-heading) }
+img  { max-width:100%; height:auto; display:block }
+a    { color:inherit; text-decoration:none }
+ul   { list-style:none }
+button,input,select,textarea { font-family:inherit }
+
+/* ── SKIP NAV ─────────────────────────────────────────────── */
+.skip { position:absolute; top:-50px; left:1rem; background:var(--blue-bright); color:#fff; padding:.5rem 1rem; border-radius:var(--r); font-size:.875rem; transition:top var(--t); z-index:9999 }
+.skip:focus { top:1rem }
+
+/* ── UTILITIES ────────────────────────────────────────────── */
+.wrap    { max-width:1160px; margin:0 auto; padding:0 1.5rem }
+.wrap-sm { max-width:760px;  margin:0 auto; padding:0 1.5rem }
+
+/* ═══════════════════════════════════════════════════════════
+   HEADER
+═══════════════════════════════════════════════════════════ */
+.hdr {
+  position:sticky; top:0; z-index:200;
+  background:#001947;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 2px 12px rgba(0,0,0,.2);
+}
+.hdr-in { display:flex; align-items:center; justify-content:space-between; height:72px; gap:1.5rem }
+.hdr-brand { display:flex; align-items:center; gap:.75rem; flex-shrink:0 }
+.hdr-brand img { height:48px; width:auto }
+.hdr-brand-name { display:none }
+.hdr-brand-name strong { font-family:var(--font-heading); display:block; font-size:1rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; color:#001947 }
+.hdr-brand-name span { font-size:.65rem; letter-spacing:.25em; text-transform:uppercase; color:var(--txt-muted); font-weight:500 }
+.hdr-nav ul { display:flex; gap:2rem; align-items:center }
+.hdr-nav a { font-family:var(--font-heading); font-size:.85rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:rgba(255,255,255,.8); padding-bottom:3px; border-bottom:2px solid transparent; transition:color var(--t), border-color var(--t) }
+.hdr-nav a:hover { color:#fff; border-bottom-color:#fff }
+.hdr-cta { display:flex; align-items:center; gap:.75rem; flex-shrink:0 }
+@media(max-width:900px) { .hdr-nav { display:none } }
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE MENU
+═══════════════════════════════════════════════════════════ */
+.mob-menu-btn {
+  display:none; flex-direction:column; justify-content:center; gap:6px;
+  width:44px; height:44px; background:none; border:none; cursor:pointer;
+  padding:10px; position:relative; z-index:1001;
+}
+.mob-menu-btn span {
+  display:block; height:1.5px; background:#fff; border-radius:2px;
+  transition:transform .38s cubic-bezier(.4,0,.2,1), opacity .25s ease, width .28s ease;
+  transform-origin:center;
+}
+.mob-menu-btn span:nth-child(1) { width:24px }
+.mob-menu-btn span:nth-child(2) { width:16px; margin-left:auto }
+.mob-menu-btn span:nth-child(3) { width:24px }
+.mob-menu-btn[aria-expanded="true"] span:nth-child(1) { transform:translateY(7.5px) rotate(45deg); width:24px }
+.mob-menu-btn[aria-expanded="true"] span:nth-child(2) { opacity:0; width:0 }
+.mob-menu-btn[aria-expanded="true"] span:nth-child(3) { transform:translateY(-7.5px) rotate(-45deg); width:24px }
+@media(max-width:900px) { .mob-menu-btn { display:flex } }
+
+.mob-nav {
+  position:fixed; inset:0; z-index:1000;
+  background:var(--navy);
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  opacity:0; visibility:hidden; pointer-events:none;
+  transition:opacity .38s ease, visibility .38s ease;
+}
+.mob-nav.is-open { opacity:1; visibility:visible; pointer-events:auto }
+.mob-nav ul { display:flex; flex-direction:column; align-items:center; gap:0; list-style:none; margin:0; padding:0 }
+.mob-nav li { opacity:0; transform:translateY(16px); transition:opacity .4s ease, transform .4s ease }
+.mob-nav.is-open li:nth-child(1) { opacity:1; transform:none; transition-delay:.08s }
+.mob-nav.is-open li:nth-child(2) { opacity:1; transform:none; transition-delay:.14s }
+.mob-nav.is-open li:nth-child(3) { opacity:1; transform:none; transition-delay:.20s }
+.mob-nav.is-open li:nth-child(4) { opacity:1; transform:none; transition-delay:.26s }
+.mob-nav.is-open li:nth-child(5) { opacity:1; transform:none; transition-delay:.32s }
+.mob-nav a {
+  display:block; padding:.9rem 2.5rem;
+  font-family:var(--font-heading); font-size:1.2rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(255,255,255,.5); text-align:center; position:relative; overflow:hidden;
+  transition:color .25s ease;
+}
+.mob-nav a::after { content:''; position:absolute; bottom:6px; left:50%; transform:translateX(-50%); width:0; height:1px; background:rgba(255,255,255,.35); transition:width .3s ease }
+.mob-nav a:hover { color:#fff }
+.mob-nav a:hover::after { width:48px }
+.mob-nav-footer { position:absolute; bottom:2.5rem; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:.75rem; opacity:0; transform:translateY(10px); transition:opacity .4s ease .4s, transform .4s ease .4s }
+.mob-nav.is-open .mob-nav-footer { opacity:1; transform:none }
+.mob-nav-footer a.mob-nav-phone { font-family:var(--font-heading); font-size:1rem; font-weight:800; letter-spacing:.04em; color:#fff; display:flex; align-items:center; gap:.5rem }
+.mob-nav-footer a.mob-nav-phone svg { color:var(--red) }
+.mob-nav-footer .mob-nav-urgence { font-size:.7rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.35); border:1px solid rgba(255,255,255,.12); padding:.3rem .9rem; border-radius:50px }
+
+/* ═══════════════════════════════════════════════════════════
+   PAGE HERO — MENTIONS LÉGALES
+═══════════════════════════════════════════════════════════ */
+.legal-hero {
+  background:#001947;
+  padding:4rem 0 3.5rem;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.legal-hero-eyebrow {
+  font-family:var(--font-heading); font-size:.72rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--gold-light); margin-bottom:.85rem;
+}
+.legal-hero h1 {
+  font-size:clamp(1.8rem,4vw,2.8rem); font-weight:900;
+  letter-spacing:-.03em; color:#fff; line-height:1.1;
+  margin-bottom:.75rem;
+}
+.legal-hero-sub { font-size:.88rem; color:rgba(255,255,255,.4); letter-spacing:.02em }
+.legal-hero-lang {
+  margin-top:1.5rem;
+}
+.legal-hero-lang a {
+  display:inline-flex; align-items:center; gap:.4rem;
+  font-size:.78rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(255,255,255,.45);
+  border:1px solid rgba(255,255,255,.15);
+  padding:.35rem .9rem; border-radius:50px;
+  transition:color var(--t), border-color var(--t);
+}
+.legal-hero-lang a:hover { color:#fff; border-color:rgba(255,255,255,.5) }
+
+/* ═══════════════════════════════════════════════════════════
+   CONTENU LÉGAL
+═══════════════════════════════════════════════════════════ */
+.legal-sec { padding:4rem 0 5rem }
+
+.legal-body { font-size:.95rem; line-height:1.8; color:var(--txt) }
+
+.legal-article {
+  border-bottom:1px solid var(--border);
+  padding-bottom:2.5rem; margin-bottom:2.5rem;
+}
+.legal-article:last-child { border-bottom:none; margin-bottom:0 }
+
+.legal-article h2 {
+  font-size:1rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--txt-muted); margin-bottom:1rem;
+  display:flex; align-items:center; gap:.65rem;
+}
+.legal-article h2 .art-num {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:26px; height:26px; border-radius:50%;
+  background:var(--navy); color:#fff;
+  font-size:.7rem; font-weight:900; letter-spacing:0; flex-shrink:0;
+}
+
+.legal-article h3 {
+  font-size:.9rem; font-weight:700; color:var(--navy);
+  margin-top:1.4rem; margin-bottom:.5rem;
+}
+
+.legal-article p { margin-bottom:.85rem }
+.legal-article p:last-child { margin-bottom:0 }
+
+.legal-article ul {
+  list-style:none; margin:.5rem 0 .85rem 0;
+}
+.legal-article ul li {
+  padding:.25rem 0 .25rem 1.2rem; position:relative;
+  font-size:.9rem; color:var(--txt);
+}
+.legal-article ul li::before {
+  content:''; position:absolute; left:0; top:.75rem;
+  width:6px; height:6px; border-radius:50%; background:var(--blue);
+}
+
+.legal-article a { color:var(--blue); text-decoration:underline; text-underline-offset:2px }
+.legal-article a:hover { color:var(--navy) }
+
+.legal-info-box {
+  background:var(--off); border:1px solid var(--border);
+  border-left:3px solid var(--navy);
+  border-radius:0 var(--r) var(--r) 0;
+  padding:1rem 1.25rem; margin:.85rem 0;
+  font-size:.88rem; line-height:1.7;
+}
+.legal-info-box strong { color:var(--navy); display:block; margin-bottom:.3rem; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase }
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════ */
+.ftr { background:#001947; color:rgba(255,255,255,.55); padding:4rem 0 0 }
+.ftr-grid { display:grid; grid-template-columns:1.8fr 1fr 1fr; gap:3rem; padding-bottom:3rem; border-bottom:1px solid rgba(255,255,255,.08) }
+@media(max-width:860px) { .ftr-grid { grid-template-columns:1fr 1fr } }
+@media(max-width:500px) { .ftr-grid { grid-template-columns:1fr; gap:2rem } }
+.ftr-brand { display:flex; align-items:center; gap:.85rem; margin-bottom:1.25rem }
+.ftr-brand img { height:40px; width:auto }
+.ftr-brand-name strong { font-family:var(--font-heading); display:block; font-size:.95rem; font-weight:900; letter-spacing:.14em; text-transform:uppercase; color:#fff }
+.ftr-brand-name span { font-size:.6rem; letter-spacing:.3em; text-transform:uppercase; color:rgba(255,255,255,.35) }
+.ftr address { font-style:normal; font-size:.85rem; line-height:2.1; color:rgba(255,255,255,.55) }
+.ftr address a { color:rgba(255,255,255,.75); transition:color var(--t) }
+.ftr address a:hover { color:#fff }
+.ftr-num { font-size:.7rem; color:rgba(255,255,255,.3); margin-top:.75rem }
+.ftr h3 { font-family:var(--font-heading); font-size:.7rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.4); margin-bottom:1rem }
+.ftr ul { display:flex; flex-direction:column; gap:.5rem }
+.ftr ul a { font-size:.875rem; color:rgba(255,255,255,.6); transition:color var(--t) }
+.ftr ul a:hover { color:#fff }
+.ftr ul li strong { color:rgba(255,255,255,.8) }
+.ftr-bot { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; padding:1.25rem 0; font-size:.78rem; color:rgba(255,255,255,.3) }
+.ftr-bot nav { display:flex; gap:1.5rem }
+.ftr-bot a { color:rgba(255,255,255,.3); transition:color var(--t) }
+.ftr-bot a:hover { color:rgba(255,255,255,.7) }
+
+@media(max-width:768px) {
+  .ftr-bot { flex-direction:column; text-align:center; gap:.75rem }
+  .wrap { padding:0 1rem }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ═══ HEADER ══════════════════════════════════════════════ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+
+    <a class="hdr-brand" href="index.html" aria-label="Frigara Geneva – Accueil">
+      <img src="logo.png" alt="" width="64" aria-hidden="true">
+    </a>
+
+    <nav class="hdr-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#entretien">Entretien annuel</a></li>
+        <li><a href="index.html#garanties">Garanties</a></li>
+        <li><a href="index.html#avis">Avis</a></li>
+        <li><a href="index.html#rdv">Rendez-vous</a></li>
+      </ul>
+    </nav>
+
+    <div class="hdr-cta">
+      <a href="legal-notice.html" style="font-size:.75rem;font-weight:700;color:rgba(255,255,255,.7);text-decoration:none;letter-spacing:.06em;padding:.3rem .7rem;border:1px solid rgba(255,255,255,.2);border-radius:50px;transition:color .2s,border-color .2s" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,.6)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.borderColor='rgba(255,255,255,.2)'">EN</a>
+      <button class="mob-menu-btn" id="mob-menu-btn" aria-expanded="false" aria-controls="mob-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+  <nav class="mob-nav" id="mob-nav" aria-label="Menu mobile">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#entretien">Entretien annuel</a></li>
+      <li><a href="index.html#garanties">Garanties</a></li>
+      <li><a href="index.html#avis">Avis clients</a></li>
+      <li><a href="index.html#rdv">Rendez-vous</a></li>
+    </ul>
+    <div class="mob-nav-footer">
+      <a href="tel:+41797788267" class="mob-nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +41 79 778 82 67
+      </a>
+      <span class="mob-nav-urgence">24h / 7j — Intervention rapide</span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ═══ PAGE HERO ════════════════════════════════════════════ -->
+<div class="legal-hero">
+  <div class="wrap">
+    <p class="legal-hero-eyebrow">Frigara Geneva</p>
+    <h1>Mentions légales</h1>
+    <p class="legal-hero-sub">Dernière mise à jour : mai 2025</p>
+    <div class="legal-hero-lang">
+      <a href="legal-notice.html">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Read in English
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CONTENU ══════════════════════════════════════════════ -->
+<section class="legal-sec">
+  <div class="wrap-sm">
+    <div class="legal-body">
+
+      <!-- 1. ÉDITEUR -->
+      <div class="legal-article">
+        <h2><span class="art-num">1</span> Éditeur du site</h2>
+        <div class="legal-info-box">
+          <strong>Frigara Geneva</strong>
+          Rue Du-Roveray 16, 1207 Genève, Suisse<br>
+          Tél. : <a href="tel:+41797788267">+41 79 778 82 67</a><br>
+          E-mail : <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a><br>
+          N° d'entreprise : CHE-393.541.360
+        </div>
+        <p>Frigara Geneva est une entreprise active dans les domaines de la plomberie, du chauffage et de la climatisation, inscrite au Registre du commerce du canton de Genève.</p>
+      </div>
+
+      <!-- 2. HÉBERGEMENT -->
+      <div class="legal-article">
+        <h2><span class="art-num">2</span> Hébergement</h2>
+        <p>Ce site est hébergé par :</p>
+        <div class="legal-info-box">
+          <strong>GitHub, Inc. (GitHub Pages)</strong>
+          88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis<br>
+          Filiale de Microsoft Corporation<br>
+          <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Politique de confidentialité de GitHub</a>
+        </div>
+        <p>Ce site est hébergé via le service <strong>GitHub Pages</strong>, une infrastructure gérée par GitHub, Inc. Les données de navigation (notamment l'adresse IP des visiteurs) peuvent être traitées par GitHub dans le cadre de la fourniture du service d'hébergement. GitHub est soumis à la législation américaine et au cadre de transfert de données UE-États-Unis (Data Privacy Framework).</p>
+      </div>
+
+      <!-- 3. PROPRIÉTÉ INTELLECTUELLE -->
+      <div class="legal-article">
+        <h2><span class="art-num">3</span> Propriété intellectuelle</h2>
+        <p>L'ensemble des contenus présents sur ce site (textes, images, graphismes, logos, icônes, sons, logiciels) est la propriété exclusive de Frigara Geneva ou de ses partenaires, et est protégé par les lois suisses et internationales relatives à la propriété intellectuelle.</p>
+        <p>Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de Frigara Geneva.</p>
+        <p>Toute exploitation non autorisée du site ou de l'un des éléments qu'il contient sera considérée comme constitutive d'une atteinte aux droits de Frigara Geneva.</p>
+      </div>
+
+      <!-- 4. PROTECTION DES DONNÉES -->
+      <div class="legal-article">
+        <h2><span class="art-num">4</span> Protection des données personnelles</h2>
+        <p>Frigara Geneva s'engage à protéger la vie privée des visiteurs de son site conformément à la <strong>Loi fédérale sur la protection des données (LPD)</strong> et à son ordonnance d'application (OPDo), en vigueur depuis le 1er septembre 2023.</p>
+
+        <h3>Données collectées</h3>
+        <p>Dans le cadre de l'utilisation du site, les données suivantes peuvent être collectées :</p>
+        <ul>
+          <li>Données de formulaire de contact : nom, prénom, numéro de téléphone, adresse e-mail, type de prestation souhaitée et message libre.</li>
+          <li>Données de navigation : adresse IP, type de navigateur, pages visitées et horodatage (journaux de serveur).</li>
+          <li>Préférences de navigation stockées localement via le mécanisme <em>localStorage</em> du navigateur (ex. : consentement aux cookies, affichage du widget WhatsApp).</li>
+        </ul>
+
+        <h3>Finalité du traitement</h3>
+        <p>Les données personnelles collectées sont utilisées aux fins suivantes :</p>
+        <ul>
+          <li>Traitement et suivi de votre demande de rendez-vous ou de dépannage.</li>
+          <li>Communication relative à nos prestations (devis, confirmation d'intervention).</li>
+          <li>Amélioration du site et de la qualité de nos services.</li>
+          <li>Respect de nos obligations légales et comptables.</li>
+        </ul>
+
+        <h3>Base légale du traitement</h3>
+        <p>Le traitement est fondé sur votre consentement (art. 6 LPD), sur l'exécution d'un contrat auquel vous êtes partie ou sur l'intérêt légitime de Frigara Geneva à vous fournir ses services.</p>
+
+        <h3>Durée de conservation</h3>
+        <p>Les données sont conservées le temps nécessaire à la réalisation des finalités pour lesquelles elles ont été collectées, et au maximum :</p>
+        <ul>
+          <li><strong>Données de contact client :</strong> 10 ans à compter de la dernière interaction (délai de prescription du droit suisse des obligations).</li>
+          <li><strong>Journaux de serveur :</strong> 30 jours.</li>
+          <li><strong>Données stockées en localStorage :</strong> jusqu'à suppression par l'utilisateur via les paramètres de son navigateur.</li>
+        </ul>
+
+        <h3>Transfert à des tiers</h3>
+        <p>Frigara Geneva ne vend pas, ne loue pas et ne transmet pas vos données personnelles à des tiers à des fins commerciales. Les données peuvent être partagées avec des sous-traitants techniques (hébergeur, outil de prise de rendez-vous le cas échéant) agissant strictement selon nos instructions et dans le respect de la LPD.</p>
+        <p>Ce site utilise les polices de caractères Google Fonts, chargées depuis les serveurs de Google LLC (États-Unis). Ce chargement implique la transmission de votre adresse IP à Google. Pour plus d'informations, consultez la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">politique de confidentialité de Google</a>.</p>
+
+        <h3>Vos droits</h3>
+        <p>Conformément à la LPD, vous disposez des droits suivants concernant vos données personnelles :</p>
+        <ul>
+          <li><strong>Droit d'accès :</strong> obtenir une copie des données vous concernant.</li>
+          <li><strong>Droit de rectification :</strong> faire corriger des données inexactes.</li>
+          <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données dans les cas prévus par la loi.</li>
+          <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données.</li>
+          <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré et lisible par machine.</li>
+        </ul>
+        <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a> ou par courrier postal à l'adresse indiquée à l'article 1.</p>
+        <p>Si vous estimez que vos droits n'ont pas été respectés, vous pouvez adresser une réclamation au <strong>Préposé fédéral à la protection des données et à la transparence (PFPDT)</strong> — <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener noreferrer">www.edoeb.admin.ch</a>.</p>
+      </div>
+
+      <!-- 5. COOKIES -->
+      <div class="legal-article">
+        <h2><span class="art-num">5</span> Cookies et stockage local</h2>
+        <p>Ce site n'utilise pas de cookies de traçage ou publicitaires. Le seul mécanisme de stockage côté client utilisé est le <strong>localStorage</strong> du navigateur, pour les finalités suivantes :</p>
+        <ul>
+          <li>Mémorisation de votre acceptation de la bannière d'information cookies.</li>
+          <li>Mémorisation de l'affichage du widget WhatsApp (éviter de le réafficher à chaque visite).</li>
+        </ul>
+        <p>Ces données restent stockées localement dans votre navigateur et ne sont jamais transmises à nos serveurs. Vous pouvez les supprimer à tout moment via les paramètres de votre navigateur (section « Stockage local » ou « Données de site »).</p>
+      </div>
+
+      <!-- 6. LIMITATION DE RESPONSABILITÉ -->
+      <div class="legal-article">
+        <h2><span class="art-num">6</span> Limitation de responsabilité</h2>
+        <p>Frigara Geneva s'efforce de maintenir les informations publiées sur ce site aussi précises et à jour que possible. Toutefois, l'entreprise ne peut garantir l'exactitude, l'exhaustivité ou l'actualité des informations diffusées.</p>
+        <p>Frigara Geneva décline toute responsabilité pour :</p>
+        <ul>
+          <li>les erreurs ou omissions dans le contenu du site ;</li>
+          <li>les dommages résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations mises en ligne ;</li>
+          <li>l'indisponibilité temporaire du site due à des opérations de maintenance ou à un incident technique ;</li>
+          <li>le contenu des sites tiers vers lesquels des liens hypertextes pointent depuis ce site.</li>
+        </ul>
+      </div>
+
+      <!-- 7. DROIT APPLICABLE -->
+      <div class="legal-article">
+        <h2><span class="art-num">7</span> Droit applicable et for juridictionnel</h2>
+        <p>Les présentes mentions légales sont régies par le <strong>droit suisse</strong>. Tout litige relatif à l'utilisation du présent site relève de la compétence exclusive des <strong>tribunaux du canton de Genève</strong>, sous réserve d'un recours au Tribunal fédéral suisse.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <div class="ftr-brand">
+          <img src="logo.png" alt="Frigara Geneva" width="60">
+          <div class="ftr-brand-name">
+            <strong>Frigara Geneva</strong>
+            <span>Plomberie · Chauffage</span>
+          </div>
+        </div>
+        <address>
+          Rue Du-Roveray 16<br>
+          1207 Genève<br>
+          <a href="tel:+41797788267">+41 79 778 82 67</a><br>
+          <a href="mailto:info@frigarageneva.ch">info@frigarageneva.ch</a>
+        </address>
+        <p class="ftr-num">CHE-393.541.360</p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="index.html#services">Dépannage Urgence 24h/24</a></li>
+          <li><a href="index.html#services">Fuite d'Eau</a></li>
+          <li><a href="index.html#services">Installation Chauffe-eau</a></li>
+          <li><a href="index.html#services">Débouchage Canalisation</a></li>
+          <li><a href="index.html#services">Chauffagiste &amp; Chaudière</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Horaires</h3>
+        <ul>
+          <li><strong>Urgences :</strong> 24h/24 · 7j/7</li>
+          <li>Lun – Ven : 08:00 – 19:00</li>
+          <li>Samedi : 09:00 – 17:00</li>
+          <li>Dimanche : Urgences uniquement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ftr-bot">
+      <p>&copy; 2025 Frigara Geneva — Tous droits réservés</p>
+      <nav>
+        <a href="mentions-legales.html" aria-current="page">Mentions légales</a>
+        <a href="legal-notice.html">Legal Notice (EN)</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ── Menu mobile ── */
+  var mobBtn = document.getElementById('mob-menu-btn');
+  var mobNav = document.getElementById('mob-nav');
+  if (mobBtn && mobNav) {
+    mobBtn.addEventListener('click', function() {
+      var open = mobNav.classList.toggle('is-open');
+      mobBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    mobNav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mobNav.classList.remove('is-open');
+        mobBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+</script>
+</body>
+</html>
