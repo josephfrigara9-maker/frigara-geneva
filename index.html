@@ -2277,11 +2277,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* ── Dégradé de fond au scroll ── */
   (function() {
     var ticking = false;
-    var maxScroll = 0;
-    function calcMax() { maxScroll = document.body.scrollHeight - window.innerHeight; }
-    window.addEventListener('load', calcMax);
-    window.addEventListener('resize', calcMax, { passive: true });
+    var maxScroll = -1;
+    window.addEventListener('resize', function() { maxScroll = -1; }, { passive: true });
     function updateBg() {
+      if (maxScroll < 0) maxScroll = document.body.scrollHeight - window.innerHeight;
       if (maxScroll <= 0) { ticking = false; return; }
       var progress = Math.min(window.scrollY / maxScroll, 1);
       var r = Math.round(255 - progress * 17);
