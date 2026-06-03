@@ -1836,6 +1836,8 @@ section[id] { scroll-margin-top:80px }
 
     <div class="rdv-wrap">
       <form id="rdv-form" class="rdv-form" novalidate>
+        <input type="hidden" name="_subject" value="New Appointment — Frigara Geneva">
+        <input type="hidden" name="_language" value="en">
         <div class="frow">
           <div class="fg">
             <label for="fn">Full name <span>*</span></label>
@@ -2064,15 +2066,37 @@ section[id] { scroll-margin-top:80px }
     if (!slot)              { setErr('e-slot',    'Please choose a time slot.'); ok=false; }
     if (!ok) return;
 
-    var rdvs = JSON.parse(localStorage.getItem('frigara_rdv') || '[]');
-    rdvs.push({ name:name, phone:phone, address:address, service:form.service.value, date:date, slot:slot, at:new Date().toISOString() });
-    localStorage.setItem('frigara_rdv', JSON.stringify(rdvs));
+    var btn = form.querySelector('[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
 
-    fb.textContent = '✓ Appointment confirmed for ' + date + ' at ' + slot + '. We will contact you at ' + phone + ' within 24h.';
-    fb.className = 'fb fb-ok';
-    form.reset();
-    fd.min = new Date(Date.now()+86400000).toISOString().split('T')[0];
-    fb.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    fetch('https://formspree.io/f/xrevzjee', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(res) {
+      if (res.ok) {
+        fb.textContent = '✓ Request sent! We will contact you at ' + phone + ' within 15 minutes during business hours.';
+        fb.className = 'fb fb-ok';
+        form.reset();
+        fd.min = new Date(Date.now()+86400000).toISOString().split('T')[0];
+        fb.scrollIntoView({ behavior:'smooth', block:'nearest' });
+      } else {
+        return res.json().then(function(data) {
+          fb.textContent = data.errors ? data.errors.map(function(x){return x.message;}).join(', ') : 'Error — please try again.';
+          fb.className = 'fb fb-err';
+        });
+      }
+    })
+    .catch(function() {
+      fb.textContent = 'Network error — please call us directly at +41 79 778 82 67.';
+      fb.className = 'fb fb-err';
+    })
+    .finally(function() {
+      btn.disabled = false;
+      btn.textContent = 'Confirm appointment';
+    });
   });
 
   /* ── Compteur chiffres ── */
