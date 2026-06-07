@@ -1095,6 +1095,7 @@ section[id] { scroll-margin-top:80px }
 
 /* Popup card */
 .wa-popup {
+  position:relative;
   width:300px;
   background:#fff;
   border-radius:16px;
@@ -1109,18 +1110,19 @@ section[id] { scroll-margin-top:80px }
 }
 
 .wa-popup-close {
-  position:absolute; top:.6rem; right:.75rem;
-  background:rgba(255,255,255,.2); border:none; cursor:pointer;
-  color:#fff; font-size:.85rem; font-weight:700;
-  width:24px; height:24px; border-radius:50%;
+  position:absolute; top:.6rem; left:.75rem; z-index:1;
+  background:#fff; border:none; cursor:pointer;
+  color:#075E54; font-size:1rem; font-weight:900;
+  width:26px; height:26px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  transition:background var(--t);
+  transition:opacity var(--t);
+  box-shadow:0 1px 4px rgba(0,0,0,.2);
 }
-.wa-popup-close:hover { background:rgba(255,255,255,.35) }
+.wa-popup-close:hover { opacity:.85 }
 
 .wa-popup-header {
   background:#075E54;
-  padding:1rem 1.25rem; padding-right:2.5rem;
+  padding:1rem 1.25rem; padding-left:2.5rem;
   display:flex; align-items:center; gap:.85rem;
   position:relative;
 }
