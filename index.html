@@ -40,7 +40,7 @@ window.dataLayer=window.dataLayer||[];
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://frigarageneva.ch/og-image.png">
 <meta name="theme-color" content="#0F2044">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":["Plumber","LocalBusiness"],"name":"Frigara Geneva","url":"https://frigarageneva.ch/","telephone":"+41797788267","email":"info@frigarageneva.ch","address":{"@type":"PostalAddress","streetAddress":"Rue Du-Roveray 16","addressLocality":"Genève","postalCode":"1207","addressRegion":"Canton de Genève","addressCountry":"CH"},"geo":{"@type":"GeoCoordinates","latitude":46.2044,"longitude":6.1432},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"9","bestRating":"5"},"areaServed":[{"@type":"City","name":"Genève"},{"@type":"City","name":"Carouge"},{"@type":"City","name":"Lancy"},{"@type":"City","name":"Onex"},{"@type":"City","name":"Vernier"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Plumber","LocalBusiness"],"name":"Frigara Geneva","url":"https://frigarageneva.ch/","telephone":"+41797788267","email":"info@frigarageneva.ch","address":{"@type":"PostalAddress","streetAddress":"Rue Du-Roveray 16","addressLocality":"Genève","postalCode":"1207","addressRegion":"Canton de Genève","addressCountry":"CH"},"geo":{"@type":"GeoCoordinates","latitude":46.2044,"longitude":6.1432},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"5","bestRating":"5"},"areaServed":[{"@type":"City","name":"Genève"},{"@type":"City","name":"Carouge"},{"@type":"City","name":"Lancy"},{"@type":"City","name":"Onex"},{"@type":"City","name":"Vernier"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quel est le prix moyen d'une réparation de plomberie ?","acceptedAnswer":{"@type":"Answer","text":"Le tarif horaire est de 150 CHF / heure. Pour un dépannage courant (fuite, robinetterie, débouchage), comptez en moyenne 150 à 350 CHF selon la complexité. Un remplacement de chauffe-eau démarre à 299 CHF HT. Un devis écrit gratuit et sans engagement vous est remis avant toute intervention."}},{"@type":"Question","name":"Quel est le délai d'arrivée moyen sur Genève ?","acceptedAnswer":{"@type":"Answer","text":"Nos techniciens sont basés sur le canton de Genève et dans l'agglomération. En cas d'urgence, le délai d'intervention moyen est de moins de 30 minutes. Ce délai est garanti 24h/24 et 7j/7, y compris les week-ends et jours fériés."}},{"@type":"Question","name":"Intervenez-vous le soir, le week-end et les jours fériés ?","acceptedAnswer":{"@type":"Answer","text":"Oui, notre service d'urgence est disponible 24h/24 et 7j/7, sans exception. Pour les interventions standard (installation, entretien), nos horaires habituels sont du lundi au vendredi de 08h00 à 19h00 et le samedi de 09h00 à 17h00."}}]}</script>
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -174,7 +174,7 @@ button,input,select,textarea { font-family:inherit }
 @media(min-width:901px) { .hdr-urgence { display:none } }
 .hero-urgence-cta { display:none; margin-top:1.5rem }
 @media(max-width:900px) { .hero-urgence-cta { display:inline-flex } }
-@media(max-width:800px) { .hero-urgence-cta { order:3; margin:1.5rem auto 0; padding:.85rem 2.5rem; font-size:1rem } }
+@media(max-width:800px) { .hero-urgence-cta { order:4; margin:1.5rem auto 0; padding:.85rem 2.5rem; font-size:1rem } }
 @media(max-width:360px) { .hdr-urgence { padding:.45rem .75rem; font-size:.72rem } }
 
 /* ═══════════════════════════════════════════════════════════
@@ -318,6 +318,19 @@ button,input,select,textarea { font-family:inherit }
   margin-bottom:2rem;
 }
 @media(max-width:800px) { .hero-sub { margin-inline:auto } }
+.hero-specialty {
+  display:flex; flex-wrap:wrap; gap:.6rem;
+  margin-top:.75rem; margin-bottom:1.75rem;
+}
+@media(max-width:800px) { .hero-specialty { justify-content:center } }
+.hero-chip {
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.35rem .85rem; border-radius:999px;
+  background:rgba(15,32,68,.06); border:1px solid rgba(15,32,68,.12);
+  font-size:.82rem; font-weight:600; color:var(--navy);
+  letter-spacing:.01em;
+}
+.hero-chip svg { flex-shrink:0 }
 
 .hero-btns {
   display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:2.5rem;
@@ -328,7 +341,7 @@ button,input,select,textarea { font-family:inherit }
   display:flex; gap:1.75rem; flex-wrap:wrap;
   margin-bottom:2rem;
 }
-@media(max-width:800px) { .hero-badges { justify-content:center; order:4; margin-bottom:0; margin-top:1.5rem } }
+@media(max-width:800px) { .hero-badges { justify-content:center; order:5; margin-bottom:0; margin-top:1.5rem } }
 
 .hbadge {
   display:flex; align-items:center; gap:.5rem;
@@ -785,10 +798,6 @@ button,input,select,textarea { font-family:inherit }
 .rev-card:nth-child(3) { top:96px;  z-index:3 }
 .rev-card:nth-child(4) { top:104px; z-index:4 }
 .rev-card:nth-child(5) { top:112px; z-index:5 }
-.rev-card:nth-child(6) { top:120px; z-index:6 }
-.rev-card:nth-child(7) { top:128px; z-index:7 }
-.rev-card:nth-child(8) { top:136px; z-index:8 }
-.rev-card:nth-child(9) { top:144px; z-index:9 }
 .rev-card:hover { box-shadow:0 8px 32px rgba(15,32,68,.15) }
 
 .rev-top { display:flex; align-items:flex-start; gap:.85rem }
@@ -811,6 +820,19 @@ button,input,select,textarea { font-family:inherit }
   font-size:.72rem; font-weight:700; letter-spacing:.06em;
   text-transform:uppercase; color:var(--blue-bright);
 }
+.rev-cta-wrap {
+  text-align:center; margin-top:2rem;
+}
+.btn-google-review {
+  display:inline-flex; align-items:center; gap:.6rem;
+  padding:.75rem 1.6rem; border-radius:999px;
+  background:#fff; border:2px solid #dadce0;
+  font-size:.92rem; font-weight:700; color:#3c4043;
+  text-decoration:none; letter-spacing:.01em;
+  box-shadow:0 1px 6px rgba(0,0,0,.1);
+  transition:box-shadow .2s, border-color .2s;
+}
+.btn-google-review:hover { border-color:#4285F4; box-shadow:0 2px 12px rgba(66,133,244,.25) }
 
 /* ═══════════════════════════════════════════════════════════
    FORMULAIRE RDV
@@ -1285,6 +1307,7 @@ section[id] { scroll-margin-top:80px }
   .hero-left { display:flex; flex-direction:column }
   .hero-left h1 { order:1 }
   .hero-left .hero-sub { order:2 }
+  .hero-left .hero-specialty { order:3 }
   .hero-logo-img { width:80px }
   .hero-logo-wrap { margin-bottom:1.75rem }
   .hero-logo-text strong { font-size:1.15rem }
@@ -1477,6 +1500,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 id="hero-title">
           <em>Dépannage Plomberie<br>24h/24</em> à Genève
         </h1>
+        <div class="hero-specialty">
+          <span class="hero-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e84a2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            Chauffage
+          </span>
+          <span class="hero-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2980b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><path d="m17 7-5 5-5-5"/><path d="m17 17-5-5-5 5"/><path d="m2 12 5-3-5-3"/><path d="m22 12-5 3 5 3"/><path d="m7.5 4.5 4.5 7.5-4.5 7.5"/><path d="m16.5 4.5-4.5 7.5 4.5 7.5"/></svg>
+            Climatisation
+          </span>
+        </div>
         <p class="hero-sub">
           Fuite d'eau, canalisation bouchée, chauffe-eau en panne —
           nos techniciens interviennent en moins de <strong style="color:var(--navy);font-weight:800">30 minutes</strong>,
@@ -1513,7 +1546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="hstat-l">Note / 5</div>
             </div>
             <div class="hstat">
-              <div class="hstat-n" data-count="9">0</div>
+              <div class="hstat-n" data-count="5">0</div>
               <div class="hstat-l">Avis clients</div>
             </div>
             <div class="hstat">
@@ -1748,58 +1781,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 id="h-avis">Ce que disent nos clients</h2>
     </div>
 
-    <div class="rating-hero" aria-label="Note globale 4.6 sur 5">
+    <div class="rating-hero" aria-label="Note globale 5.0 sur 5">
       <div class="stars xl">
         <span class="star on">★</span><span class="star on">★</span>
-        <span class="star on">★</span><span class="star on">★</span><span class="star half">★</span>
+        <span class="star on">★</span><span class="star on">★</span><span class="star on">★</span>
       </div>
       <div>
         <div class="rating-num">5.0 / 5</div>
-        <div class="rating-sub">Basé sur 9 avis vérifiés</div>
+        <div class="rating-sub">Basé sur 5 avis vérifiés</div>
       </div>
     </div>
 
     <div class="rev-grid">
-
       <article class="rev-card">
         <div class="rev-top">
-          <div class="rev-av">EA</div>
+          <div class="rev-av">JM</div>
           <div class="rev-meta">
-            <strong>E Agbavon</strong>
+            <strong>Julia Masson</strong>
             <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>9 juin 2026</time>
+            <time>10 juin 2026</time>
           </div>
         </div>
-        <p class="rev-body">Merci beaucoup pour l'intervention !</p>
+        <p class="rev-body">Je recommande tout simplement FRIGARA GENEVA. L'entretien de ma climatisation a été réalisé avec soin et professionnalisme. Technicien ponctuel, méticuleux et efficace. Travail propre et explications claires. Merci pour cette intervention de qualité.</p>
         <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
       </article>
-
       <article class="rev-card">
         <div class="rev-top">
-          <div class="rev-av">K</div>
+          <div class="rev-av">DG</div>
           <div class="rev-meta">
-            <strong>Kékéli Nunator</strong>
+            <strong>David Gal</strong>
             <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>9 juin 2026</time>
+            <time>10 juin 2026</time>
           </div>
         </div>
-        <p class="rev-body">Service rapide, professionnel</p>
+        <p class="rev-body">Très pro, merci à l'équipe qui m'a rapidement dépanné à mon domicile. Le service est au top</p>
         <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
       </article>
-
       <article class="rev-card">
         <div class="rev-top">
-          <div class="rev-av">LT</div>
+          <div class="rev-av">LG</div>
           <div class="rev-meta">
-            <strong>Laurent Tauriac</strong>
+            <strong>Laurent Gianviti</strong>
             <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>8 juin 2026</time>
+            <time>10 juin 2026</time>
           </div>
         </div>
-        <p class="rev-body">Excellent service. Intervention rapide et professionnelle ! Je recommande vraiment !</p>
+        <p class="rev-body">Intervention très rapide et équipe très efficace. Les problèmes sanitaires ont été traités très vite et l'équipe a laissé le lieu dans un état irréprochable. Je recommande très fortement Frigara pour toute intervention de plomberie sur Genève</p>
         <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
       </article>
-
       <article class="rev-card">
         <div class="rev-top">
           <div class="rev-av">PV</div>
@@ -1812,7 +1841,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="rev-body">Merci pour votre intervention rapide et efficace. Travail soigné, équipe réactive et très professionnelle. Je recommande fortement cette société pour son sérieux et la qualité de ses prestations.</p>
         <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
       </article>
-
       <article class="rev-card">
         <div class="rev-top">
           <div class="rev-av">AT</div>
@@ -1826,58 +1854,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
       </article>
 
-      <article class="rev-card">
-        <div class="rev-top">
-          <div class="rev-av">SG</div>
-          <div class="rev-meta">
-            <strong>Sebastian Gonzalez</strong>
-            <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>6 juin 2026</time>
-          </div>
-        </div>
-        <p class="rev-body">Super service ! Je recommande sans hésiter !</p>
-        <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
-      </article>
-
-      <article class="rev-card">
-        <div class="rev-top">
-          <div class="rev-av">NM</div>
-          <div class="rev-meta">
-            <strong>Noureddine Moussi</strong>
-            <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>6 juin 2026</time>
-          </div>
-        </div>
-        <p class="rev-body">Service était parfait, je recommande à 100%. Merci d'avance</p>
-        <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
-      </article>
-
-      <article class="rev-card">
-        <div class="rev-top">
-          <div class="rev-av">KB</div>
-          <div class="rev-meta">
-            <strong>Khuselbayar Bat</strong>
-            <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>6 juin 2026</time>
-          </div>
-        </div>
-        <p class="rev-body">Merci votre service</p>
-        <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
-      </article>
-
-      <article class="rev-card">
-        <div class="rev-top">
-          <div class="rev-av">SA</div>
-          <div class="rev-meta">
-            <strong>Sarah Gorgeous</strong>
-            <div class="stars" aria-label="5 étoiles"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></div>
-            <time>9 juin 2026</time>
-          </div>
-        </div>
-        <div class="rev-svc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Avis Google</div>
-      </article>
-
     </div>
+
+    <div class="rev-cta-wrap">
+      <a class="btn-google-review" href="https://g.page/r/CSfRy2_UlxCaEAE/review" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        Laisser un avis Google
+      </a>
+    </div>
+
   </div>
 </section>
 
